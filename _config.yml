@@ -14,13 +14,13 @@ markdown: kramdown
 
 
 ### content configuration ###
-title:       "SinglePaged - Simple Jekyll template"
-keywords:    "SinglePaged, jekyll, template, github, blog, single page"
-description: "A single-page template for Jekyll based blogs (like what you'd use on github pages!)"
-source_link: "https://github.com/t413/SinglePaged"
+title:       "What's Apnea?"
+keywords:    "apnea, sleep, medical, diagnose, symptoms, referral, doctor"
+description: "Your child might have sleep apnea and you've been referred to a specialist. In order to help your specialist make their evaluation, here’s what you’ll need to do."
+source_link: "https://github.com/HackApnea/HackApnea.github.io"
 favicon:     "img/favicon.ico"
 touch_icon:  "img/apple-touch-icon.png"
-google_analytics_key: UA-49607422-1 ## put YOUR key here to enable tracking! (blank to disable)
+google_analytics_key: UA-98289021-1
 
 
 ### template colors, used site-wide via css ###
@@ -31,7 +31,7 @@ colors:
   green:     '#9bcf2f'
   purple:    '#c869bf'
   orange:    '#fab125'
-  turquoise: '#0fbfcf'
+  turquoise: '#61ccc3'
 
 kramdown:
   auto_ids:  false
