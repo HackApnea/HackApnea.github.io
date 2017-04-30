@@ -21,6 +21,17 @@ html { box-sizing: border-box; }
   {% capture fg %}{% if site.colors[node.color] %}{{ site.colors[node.color] }}{% else %}{{ node.color }}{% endif %}{% endcapture %}
   nav .p-{{id}} { border-color: {{ bg }}; }
   #{{id}} { background-color: {{ bg }} !important; color: {{ fg }}; }
+  #{{id}} ul {
+    list-style: none;
+  }
+  #{{id}} li {
+    padding-left: 1em;
+    text-indent: -.7em;
+  }
+  #{{id}} li:before {
+    content: "• ";
+    color: {{ bg }};
+  }
   #{{id}} a { color: {{ fg }}; }
   #{{id}} .sectiondivider { color: {{ bg }}; }
 {% endfor %}
@@ -59,9 +70,9 @@ img {
 }
 
 hr {
-  margin:60px auto;
+  margin:30px auto;
   width:50%;
-  border-color: {{ site.colors.black }};
+  border-color: {{ site.colors.sbblue2 }};
 }
 
 .container { word-wrap: break-word; }
