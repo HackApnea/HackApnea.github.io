@@ -9,8 +9,8 @@
 	<meta name="keywords" content="{{ site.keywords }}">
 	<meta name="description" content="{{ site.description }}">
   <link rel="stylesheet" href="combo.css">
-  <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans:600,800" rel="stylesheet">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans:500,600,800" rel="stylesheet">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
 	{% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
 </head>
@@ -34,7 +34,7 @@
           <h5 class="icon-title">{{ page.title }}</h5>
         </div>
         {% elsif page.fa-icon %}
-        <div class="subtlecircle sectiondivider faicon">
+        <div class="subtlecircle sectiondivider faicon text-{{ page.fa-color }}">
           <span class="fa-stack">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
@@ -42,7 +42,7 @@
           <h5 class="icon-title">{{ page.title }}</h5>
         </div>
         {% endif %}
-        <div class="container {{ page.style }}">
+        <div class="container {{ page.class-name }}">
           {{ page.content }}
         </div>
       </div>

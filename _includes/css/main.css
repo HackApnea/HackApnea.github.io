@@ -9,7 +9,7 @@ html { box-sizing: border-box; }
 
 {% for c in site.colors %}
 .border-{{c[0]}} { border-color: {{ c[1] }} !important; }
-.text-{{c[0]}}   { color: {{ c[1] }}; }
+.text-{{c[0]}}   { color: {{ c[1] }} !important; }
 .text-{{c[0]}} a { color: {{ c[1] }}; }
 .bg-{{c[0]}}     { background-color: {{ c[1] }} !important; }
 {% endfor %}
@@ -74,12 +74,13 @@ hr {
   padding: 0 4%;
 }
 .container p, .container ol, .container ul {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 24px;
   padding: 0 5%;
 }
 .container ol, .container ul { padding: 0 8%; }
 .container p:first-of-type {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 /* keep embedded videos fluid! */
@@ -319,12 +320,16 @@ nav ul li:hover, nav ul li.active {
   nav ul li { min-width:90px; line-height:20px; }
 }
 
+.fa-stack-1x {
+  margin-top: -8px;
+}
+
 /* anything not desktop */
 @media only screen and (max-width: 767px) {
-	.container h1 { font-size: 30px; }
-	.container h2 { font-size: 24px; }
-	.container h3 { font-size: 20px; }
-	.container h4 { font-size: 18px; }
+	.container h1 { font-size: 36px; }
+	.container h2 { font-size: 30px; }
+	.container h3 { font-size: 24px; }
+	.container h4 { font-size: 20px; }
 
 
   .section { padding:130px 0; }
@@ -354,4 +359,13 @@ nav ul li:hover, nav ul li.active {
     -moz-column-count:    2;
     column-count:         2;
   }
+}
+
+.container.boxed {
+  background: {{ site.colors.white }};
+  background-clip: padding-box;
+  color: #111;
+  list-style: none;
+  padding: 30px;
+  border: 10px solid rgba(255, 255, 255, 0.3);
 }

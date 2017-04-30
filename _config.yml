@@ -27,11 +27,18 @@ google_analytics_key: UA-98289021-1
 colors:
   black:     '#111111'
   white:     '#f8f8f8'
-  blue:      '#49a7e9'
-  green:     '#9bcf2f'
-  purple:    '#c869bf'
-  orange:    '#fab125'
-  turquoise: '#61ccc3'
+  blue:      '#1976d2'
+  bluetwo:   '#BBDEFB'
+  green:     '#2e7d32'
+  purple:    '#8e24aa'
+  orange:    '#FFC107'
+  turquoise: '#00838f'
+  sbblue0: '#DAE8F5'
+  sbblue1: '#BAD6EA'
+  sbblue2: '#88BEDC'
+  sbblue3: '#539DCC'
+  sbblue4: '#2A7AB9'
+  sbblue5: '#0B559F'
 
 kramdown:
   auto_ids:  false
